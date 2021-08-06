@@ -1,0 +1,80 @@
+/* The following block can be included in a custom.scss */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');/* make the customizations */
+
+$theme-colors: (
+    "primary": #47118B, // on website font is 7121EA
+    "secondary": #46B0EE,
+    "dark": #000000,
+    "light": #FFFFFF,
+    "warning": #FFCE9D,
+    "info": red,
+    "danger": red
+);
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                              map-get($theme-colors, "primary") !default;
+$link-decoration:                         underline !default;
+$link-shade-percentage:                   20% !default;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration:                   null !default;
+
+
+// Fonts
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+// Button & Form themeing
+$border-radius: 7px;
+
+.btn-primary.custom-btn {
+    background-color: map-get($theme-colors, "primary");
+    color: map-get($theme-colors, "light");
+    &:hover {
+        background-color: map-get($theme-colors, "light");
+        border-color: map-get($theme-colors, "primary");
+        color: map-get($theme-colors, "primary");
+    }
+}
+
+.btn-primary.custom-btn-light {
+    background-color: map-get($theme-colors, "light");
+    color: map-get($theme-colors, "primary");
+    &:hover {
+        background-color: map-get($theme-colors, "primary");
+        border-color: map-get($theme-colors, "light");
+        box-shadow: 0 0 10px map-get($theme-colors, "light");
+    }
+    &:focus {
+        background-color: map-get($theme-colors, "light");
+        color: map-get($theme-colors, "primary");
+        border-color: map-get($theme-colors, "light");
+        box-shadow: 0 0 10px map-get($theme-colors, "light");
+    }
+}
+
+// Fonts & sizes
+
+$font-sizes: (
+    "large": 67px,
+    "medium": 29px,
+    "small": 18px,
+    "xsmall": 16px
+);
+
+$font-weight: (
+    "rrExtraBold": 800,
+    "rrBold": 600,
+    "rrMedium": 500,
+    "rrLight": 300
+);
+
+// $form-text-color: map-get($theme-colors, "primary");
+// $input-placeholder-color: map-get($theme-colors, "primary");
+$input-font-weight: map-get($font-weight, "rrBold");
+// $component-active-bg: map-get($theme-colors, "light");
+
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";

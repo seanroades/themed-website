@@ -1,0 +1,77 @@
+@import "./Theme.scss";
+
+body {
+  background-color: map-get($theme-colors, "primary");
+}
+
+.LargeTitle {
+  color: map-get($theme-colors, "light");
+  font-size: map-get($font-sizes, "large");
+  font-weight: map-get($font-weight, "rrExtraBold");
+}
+
+.MediumTitle {
+  color: map-get($theme-colors, "light");
+  font-size: map-get($font-sizes, "medium");
+  font-weight: map-get($font-weight, "rrBold");
+}
+
+.SmallTitle {
+  color: map-get($theme-colors, "light");
+  font-size: map-get($font-sizes, "small");
+  font-weight: map-get($font-weight, "rrBold");
+}
+
+.XSmallTitlePrimary {
+  color: map-get($theme-colors, "primary");
+  font-size: map-get($font-sizes, "xsmall");
+  font-weight: map-get($font-weight, "rrBold");
+}
+
+.LargeTitleDark {
+  color: map-get($theme-colors, "dark");
+  font-size: map-get($font-sizes, "large");
+  font-weight: map-get($font-weight, "rrExtraBold");
+}
+
+.MediumTitleDark {
+  color: map-get($theme-colors, "dark");
+  font-size: map-get($font-sizes, "medium");
+  font-weight: map-get($font-weight, "rrBold");
+}
+
+.SmallTitleDark {
+  color: map-get($theme-colors, "dark");
+  font-size: map-get($font-sizes, "small");
+  font-weight: map-get($font-weight, "rrBold");
+}
+
+.DescriptiveTextDark {
+  color: map-get($theme-colors, "dark");
+  font-size: map-get($font-sizes, "xsmall");
+}
+
+
+
+
+// Mods
+
+.CenterTextMod {
+  text-align: center;
+}
+
+.ItalicMod {
+  font-style: italic;
+}
+
+.InlineMod {
+  display: inline;
+}
+
+.FloatRightMod {
+  float: right
+}
+
+.PrimaryTextMod {
+  color: map-get($theme-colors, "primary") !important;
+}

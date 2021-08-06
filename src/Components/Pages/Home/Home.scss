@@ -1,0 +1,73 @@
+.EntryBox {
+  // border: 3px solid green;
+  padding: 10px;
+  height: 700px;
+}
+
+.TextContainer {
+  padding: 150px 0;
+  width: 70%;
+  margin: auto;
+  // border: 5px solid red;
+}
+
+.TextSpacer {
+  padding-top: 25px
+} 
+
+.FormCenter {
+  margin: auto;
+  display: block;
+  width: 400px;
+  // border: 5px solid orange;
+}
+
+.EmailBoxLeft {
+  width: 300px;
+  // border: 5px solid purple;
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.SecondaryBG {
+  background-color: white;
+  // border: 5px solid rgb(25, 190, 10);
+}
+
+.EntryBox2 {
+  padding: 100px 150px 100px 150px;
+}
+
+.TextContainer2 {
+  // border: 5px solid rgb(25, 190, 10);
+  padding-top: 20px;
+  width: 500px;
+  float: right;
+}
+
+.ImageContainer {
+  border: 5px solid rgb(0, 0, 0);
+  width: 500px;
+  height: 390px;
+}
+
+.ThirdBG {
+  background-color: rgb(255, 255, 255);
+}
+
+.TextContainer3 {
+  padding-top: 20px;
+
+  // border: 5px solid rgb(25, 190, 10);
+  width: 500px;
+  float: left;
+}
+
+.EntryBox3 {
+  padding: 100px 150px 100px 150px;
+}
